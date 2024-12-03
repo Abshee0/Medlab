@@ -44,7 +44,7 @@
   }
 
   .cyber-border::after {
-    @apply content-[''] absolute inset-0 border-2 border-blue-500/50;
+    @apply content-[''] absolute inset-0 border-2 border-blue-500/50 rounded-2xl;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   }
 

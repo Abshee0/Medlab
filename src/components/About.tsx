@@ -34,7 +34,7 @@ export function About() {
                 Leading the Way in
                 <span className="block gradient-text animate-text-shimmer">Medical Innovation</span>
               </h2>
-              <p className="text-white/80 mb-8 cyber-border p-4 glass-effect">
+              <p className="text-white/80 mb-8 cyber-border rounded-2xl p-4 glass-effect">
                 With over two decades of excellence, MedLab Diagnostics pioneers the future of medical testing. 
                 Our state-of-the-art facilities combine AI-powered diagnostics with expert human oversight for 
                 unparalleled accuracy and speed.
@@ -45,7 +45,7 @@ export function About() {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="glass-effect p-6 rounded-xl hover-scale group cyber-border"
+                  className="glass-effect p-6 rounded-2xl hover-scale group cyber-border"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="mb-4 relative">

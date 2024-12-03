@@ -48,10 +48,10 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
         <div className="max-w-3xl">
           <div className="relative mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight relative z-10">
+            <h1 className="text-5xl md:text-7xl font-bold cursor-pointer text-white leading-tight relative z-10">
               The Future of
               <span className="block relative">
-              <span className="relative z-20 gradient-text animate-text-shimmer inline-block">Medical Diagnostics</span>
+              <span className="relative h-[85px] z-20 gradient-text animate-text-shimmer inline-block">Medical Diagnostics</span>
                 <span className="absolute top-0 left-0 -z-10 opacity-10 animate-cyber-glitch" aria-hidden="true">
                   Medical Diagnostics
                 </span>

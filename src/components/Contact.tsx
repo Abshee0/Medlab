@@ -32,14 +32,14 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute w-96 h-96 top-1/4 left-1/4 bg-blue-500/10 rounded-full blur-3xl animate-pulse-glow"></div>
+        <div className="absolute w-96 h-96 top-1/45 left-1/4 bg-blue-500/10 rounded-full blur-3xl animate-pulse-glow"></div>
         <div className="absolute w-96 h-96 bottom-1/4 right-1/4 bg-indigo-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold gradient-text mb-6 animate-text-shimmer">Get in Touch</h2>
-          <p className="text-white/70 max-w-2xl mx-auto text-lg cyber-border p-4 glass-effect">
+          <p className="text-white/70 max-w-2xl mx-auto text-lg cyber-border rounded-2xl p-4 glass-effect">
             Connect with our team for appointments, inquiries, or any questions about our advanced diagnostic services.
           </p>
         </div>
@@ -80,7 +80,7 @@ export function Contact() {
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="glass-effect p-6 rounded-xl hover-scale group cyber-border"
+                className="glass-effect p-6 rounded-2xl hover-scale group cyber-border"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="mb-4 relative">
