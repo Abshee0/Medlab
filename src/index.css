@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient-start: #2563eb;
+    --gradient-end: #4f46e5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-lg bg-white/10 border border-white/20;
+  }
+  
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-105;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+
+  .cyber-button {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .cyber-button::before {
+    @apply content-[''] absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600/50 to-indigo-600/50 opacity-0 transition-opacity duration-300;
+  }
+
+  .cyber-button:hover::before {
+    @apply opacity-100;
+  }
+
+  .cyber-border {
+    @apply relative;
+  }
+
+  .cyber-border::after {
+    @apply content-[''] absolute inset-0 border-2 border-blue-500/50;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  }
+
+  .section-heading {
+    @apply text-4xl font-bold text-center mb-6;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: brightness(100%) blur(4px); }
+  50% { filter: brightness(150%) blur(8px); }
+}
+
+@keyframes cyber-glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes text-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-cyber-glitch {
+  animation: cyber-glitch 0.3s ease-in-out infinite;
+}
+
+.animate-text-shimmer {
+  background: linear-gradient(90deg, 
+    theme('colors.blue.600'), 
+    theme('colors.indigo.600'),
+    theme('colors.blue.600')
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: text-shimmer 3s linear infinite;
+}
