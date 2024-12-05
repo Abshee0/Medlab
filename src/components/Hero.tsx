@@ -51,7 +51,7 @@ export function Hero() {
             <h1 className="text-5xl md:text-7xl font-bold cursor-pointer text-white leading-tight relative z-10">
               The Future of
               <span className="block relative">
-              <span className="relative h-[85px] z-20 gradient-text animate-text-shimmer inline-block">Medical Diagnostics</span>
+              <span className="relative z-20 gradient-text animate-text-shimmer inline-block ">Medical Diagnostics</span>
                 <span className="absolute top-0 left-0 -z-10 opacity-10 animate-cyber-glitch" aria-hidden="true">
                   Medical Diagnostics
                 </span>

@@ -45,7 +45,7 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="glass-effect p-8 rounded-2xl cyber-border hover-scale">
+          <div className="glass-effect p-8 rounded-2xl hover-scale border-2 border-blue-500/50">
             <h3 className="text-2xl font-bold text-white mb-8">Send us a Message</h3>
             <form className="space-y-6">
               {['Name', 'Email'].map((field, index) => (
@@ -73,7 +73,9 @@ export function Contact() {
               >
                 <span className="relative z-10">Send Message</span>
               </button>
+              
             </form>
+            
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6">
