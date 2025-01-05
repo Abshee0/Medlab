@@ -35,7 +35,7 @@ export function About() {
                 <span className="block gradient-text animate-text-shimmer">Medical Innovation</span>
               </h2>
               <p className="text-white/80 mb-8 cyber-border rounded-2xl p-4 glass-effect">
-                With over two decades of excellence, MedLab Diagnostics pioneers the future of medical testing. 
+                With over two decades of excellence, Medical Laboratory pioneers the future of medical testing. 
                 Our state-of-the-art facilities combine AI-powered diagnostics with expert human oversight for 
                 unparalleled accuracy and speed.
               </p>
