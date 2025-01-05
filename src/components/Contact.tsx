@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: ['info@medlabdiagnostics.com'],
+    content: ['info@medicallaboratory.com'],
   },
   {
     icon: Clock,
