@@ -48,7 +48,7 @@ export function Navbar() {
               <Microscope className="h-8 w-8 text-white relative" />
               
             </div>
-            <span className="text-xl font-bold gradient-text">MedLab Diagnostics</span>
+            <span className="text-xl font-bold gradient-text">Medical Laboratory</span>
           </a>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
