@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Microscope className="h-8 w-8 text-blue-400" />
-              <span className="ml-2 text-xl font-bold">MedLab Diagnostics</span>
+              <span className="ml-2 text-xl font-bold">Medical Laboratory</span>
             </div>
             <p className="text-gray-400">
               Providing advanced diagnostic solutions with accuracy and care.
@@ -58,7 +58,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} MedLab Diagnostics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Medical Laboratory. All rights reserved.</p>
         </div>
       </div>
     </footer>
